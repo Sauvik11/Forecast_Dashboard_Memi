@@ -1,0 +1,51 @@
+<script type="text/javascript">
+  datasets = JSON.parse(`{{datasets|escapejs}}`)
+  labels = JSON.parse(`{{labels}}`)
+  let ctx = document
+    .getElementById("forecastChart")
+    .getContext("2d");
+
+  console.log(datasets);
+
+  var config = {
+    type: "line",
+    data: {
+      labels: labels,
+      datasets: datasets
+    },
+    options: {
+      responsive: true,
+      legend: {
+        position: "top"
+      },
+      title: {
+        position: "top",
+        display: true
+      },
+      tooltips: {
+        mode: "index",
+        intersect: false
+      },
+       
+      elements: {
+        point: {
+          radius: 0,
+          hoverRadius: 0
+        }
+      },
+      interaction: {
+        Mode: "nearest",
+        axis: "xy",
+        intersect: false
+      },
+
+      //   scales: {
+      //     y: {
+      //       beginAtZero: true
+      //     }
+      //   }
+    }
+  };
+
+  new Chart(ctx, config);
+</script>

@@ -1,0 +1,90 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block title %}
+  Forecast Dashboard
+{% endblock %}
+
+{% block content %}
+  <div class="container">
+    <div class="row mb-3">
+      <div class="card" style="background-color:#c7e9f7;">
+        <div class="card-body">
+          <form method="get" class="row row-cols-lg-auto g-3 align-items-center">
+            <div class="col-12">
+              <div class="input-group mb-3">
+                <label class="input-group-text" for="id_state">Select State :</label>
+                <select class="form-select" id="id_state" name="state">
+                  <option value="">All</option>
+                  {% for k, v in states.items %}
+                    <option value="{{v}}" {% if request.GET.state == v  %} selected="selected" {% endif %}>{{k}}</option>
+                  {% endfor %}
+                </select>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="input-group">
+                <label class="input-group-text" for="">Select date :</label>
+                <select name="date" id="id_date" class="form-select">
+                  {% for d in date_choices %}
+
+                    {% if request.GET.date and request.GET.date == d|date:'Y-m-d' %}
+                      <option value="{{d|date:'Y-m-d'}}" selected="">{{d}}</option>
+                    {% else %}
+                      <option value="{{d|date:'Y-m-d'}}">{{d}}</option>
+                    {% endif %}
+                  {% endfor %}
+                </select>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="input-group">
+                <label class="input-group-text" for="id_ftype">Select Forecast Types :</label>
+                <select class="select_field_class" multiple="multiple" name="ftype" id="id_ftype">
+                  <option value="">Select Forecast Type</option>
+                  {% for f in fcast_types %}
+                    <option value="{{f}}" {% if f in f_type_selected  %} selected="" {% endif %}>{{f}}</option>
+                  {% endfor %}
+                </select>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Apply</button>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mb-3">
+
+      <div class="card">
+        <div class="card-body ">
+          <canvas id="forecastChart" width="1000" height="450"></canvas>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row mb-3">
+      <div class="card">
+        <div class="card-body">
+          <canvas id="chart2" width="500" height="500"></canvas>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <script>
+    $(document).ready(function () {
+      $('#id_ftype').select2();
+    });
+  </script>
+
+  {% include 'partials/forecast.html' %}
+
+{% endblock %}
