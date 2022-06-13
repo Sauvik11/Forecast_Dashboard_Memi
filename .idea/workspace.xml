@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ee91e8db-01da-4ebc-8358-4f43ccd32fbc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/static/css/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/static/js/forecast.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/static/js/selectField.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/templates/base/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/templates/base/css.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/templates/base/js.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/templates/partials/forecast.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dashboard/migrations/0007_weather.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/templates/dashboard/forecastDash.html" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/templates/dashboard/forecastDash.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dashboard/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/dashboard/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forecastDashboard/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/forecastDashboard/settings.py" afterDir="false" />
-    </list>
+    <list default="true" id="ee91e8db-01da-4ebc-8358-4f43ccd32fbc" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,16 +21,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/Programming/Python-Projects/Django-Donation",
-    "settings.editor.selected.configurable": "configurable.group.appearance"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Programming/Python-Projects/Django-Donation&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;
   }
-}]]></component>
+}</component>
   <component name="PyConsoleOptionsProvider">
     <option name="myShowVariablesByDefault" value="false" />
   </component>
